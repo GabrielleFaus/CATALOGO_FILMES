@@ -25,7 +25,7 @@ class Filme{
  
     // Método de busca todos os filmes
     public function buscartodos(): array{
-        $query = "SELECT * FROM $this->tabela";
+        $query = "SELECT * FROM $this->tabela ORDER BY id DESC";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_CLASS, __CLASS__ );
@@ -53,5 +53,18 @@ class Filme{
         return $stmt->rowCount();
     }
 
+    public function inserir($nome, $ano, $descricao): bool
+    {
+        $query = "INSERT INTO $this->tabela (nome, ano, descricao)
+            VALUES (:nome, :ano, :descricao)";
+
+        $stmt = $this->pdo->prepare(query: $query);
+        $stmt->bindParam("nome", $nome);
+        $stmt->bindParam("ano", $ano);
+        $stmt->bindParam("descricao", $descricao);
+        $stmt->execute();
+
+        return $stmt->rowCount();
+    }
 }
 ?>

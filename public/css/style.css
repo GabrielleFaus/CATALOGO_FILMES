@@ -80,3 +80,28 @@ body{
         background-color: var(--cor-cinza);
     }
 }
+
+.cadastro{
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+
+    
+    .notificacao{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        color: var(--cor-branco);
+        padding: 16px;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+        &.sucesso{
+            background-color: var(--cor-sucesso);
+        }
+
+        &.erro{
+            background-color: var(--cor-erro);
+        }
+}
