@@ -33,17 +33,17 @@ if ($Sucesso) {
     <section class="cadastro">
         <form action="cadastro.php" method="POST">
             <div>
-                <label for="nome">Nome do filme</label>
+                <label for="nome">Nome do filme: </label><br>
                 <input type="text" name="nome" placeholder="adicione o nome" required>
-            </div>
+            </div><br>
             <div>
-                <label for="ano">Ano do filme</label>
+                <label for="ano">Ano do filme: </label><br>
                 <input type="text" name="ano" placeholder="adicione o ano" required>
-            </div>
+            </div><br>
             <div>
-                <label for="descricao">Descrição do filme</label>
+                <label for="descricao">Descrição do filme: </label><br>
                 <input type="text" name="descricao" placeholder="adicione a descricao" required>
-            </div>
+            </div><br>
             <button>Salvar</button>
             <script src="/CATALOGO_FILMES/public/js/main.js" defer></script>
         </form>

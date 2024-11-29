@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url(cadastro.css);
 
 :root{
  --cor-sucesso: #4caf50;
@@ -79,29 +80,4 @@ body{
     tbody tr:hover{
         background-color: var(--cor-cinza);
     }
-}
-
-.cadastro{
-    text-align: center;
-    padding: 16px;
-    border-radius: 10px;
-
-    
-    .notificacao{
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        color: var(--cor-branco);
-        padding: 16px;
-        border-radius: 6px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        z-index: 999;
-    }
-        &.sucesso{
-            background-color: var(--cor-sucesso);
-        }
-
-        &.erro{
-            background-color: var(--cor-erro);
-        }
 }
