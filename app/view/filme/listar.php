@@ -56,6 +56,11 @@ $filmes = $filmeModel->buscartodos();
                     <td><?php echo $filme->descricao?></td>
     
                     <td>
+                        <form action="editar.php">
+                            <button>
+                            <span class="material-symbols-outlined">edit_square</span>
+                            </button>
+                        </form>
                         <form action="visualizar.php" method="GET">
                             <input type="hidden" name="id" value="<?= $filme->id;?>">
                             <button title="Detalhes">

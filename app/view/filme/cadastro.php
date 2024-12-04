@@ -27,7 +27,7 @@ if ($Sucesso) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
 
-    <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/style.css">
+    <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/cadastro.css">
 </head>
 <body>
     <section class="cadastro">
@@ -46,6 +46,9 @@ if ($Sucesso) {
             </div><br>
             <button>Salvar</button>
             <script src="/CATALOGO_FILMES/public/js/main.js" defer></script>
+        </form>
+        <form action="listar.php"method="GET">
+            <button title="voltar">voltar</button>
         </form>
    </section>
 </body>
