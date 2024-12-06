@@ -21,7 +21,7 @@ $filme = $filmeModel->findById($id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes</title>
     
-    <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/style.css">
+    <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/visualizar.css">
 </head>
 <body>
 <section class="container">

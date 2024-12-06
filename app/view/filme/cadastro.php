@@ -30,6 +30,18 @@ if ($Sucesso) {
     <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/cadastro.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="Logo" href="">CineMania</a>
+            <ul>
+                <li>
+                    <a href="home.php">Home</a>
+                </li>
+                <li>
+                    <a href="listar.php">Filmes</a>
+                </li>
+            </nav>
+        </header>
     <section class="cadastro">
         <form action="cadastro.php" method="POST">
             <div>

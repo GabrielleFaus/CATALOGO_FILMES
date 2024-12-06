@@ -6,7 +6,7 @@
  --cor-erro: #ff4d4d;
  --cor-branco: #fff;
  --cor-preto: black;
- --cor-amarelo: #FCFF4B;
+ --cor-roxo:hsl(250, 41%, 80%);
  --cor-cinza: #BAC1B8;
 }
 
@@ -73,10 +73,34 @@ body{
 
     /*seleciona todas as linhas pares do corpo da tabela >even=par odd=impar*/
     tbody tr:nth-child(even){
-        background-color: var(--cor-amarelo);
+        background-color: var(--cor-roxo);
     }
 
     tbody tr:hover{
         background-color: var(--cor-cinza);
     }
+}
+
+nav{
+    background-color: hsl(250, 31%, 50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.Logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a{
+    color: #f0f8ff;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    letter-spacing: 2px;
 }

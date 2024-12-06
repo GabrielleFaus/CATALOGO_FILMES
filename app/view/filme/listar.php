@@ -21,6 +21,19 @@ $filmes = $filmeModel->buscartodos();
     <link rel="stylesheet" href="/CATALOGO_FILMES/public/css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="Logo" href="">CineMania</a>
+            <ul>
+                <li>
+                    <a href="home.php">Home</a>
+                </li>
+                <li>
+                    <a href="listar.php">Filmes</a>
+                </li>
+            </ul>
+            </nav>
+    </header>
 <section class="container">
     <h2>Filmes</h2>
     <div class="acao">
@@ -56,7 +69,8 @@ $filmes = $filmeModel->buscartodos();
                     <td><?php echo $filme->descricao?></td>
     
                     <td>
-                        <form action="editar.php">
+                        <form action="editar.php" method="GET">
+                            <input type="hidden" name="id" value="<?= $filme->id;?>">
                             <button>
                             <span class="material-symbols-outlined">edit_square</span>
                             </button>
