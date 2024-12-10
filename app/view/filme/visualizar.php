@@ -27,9 +27,10 @@ $filme = $filmeModel->findById($id);
 <section class="container">
     <h2>Detalhes do Filme</h2>
 
-    <h3>Nome: <?php echo $filme->nome ?></h3>
-    <p>Ano: <?php echo $filme->ano ?></p>
-    <p>Descrição: <?php echo $filme->descricao ?></p>
+        <h3>Nome: <?php echo $filme->nome; ?></h3>
+        <p><img src="<?php echo $filme->imagem; ?>" alt="<?php echo $filme->nome; ?>" style="width:200px;height:auto;"></p>
+        <p>Ano: <?php echo $filme->ano; ?></p>
+        <p>Descrição: <?php echo $filme->descricao; ?></p>
     
     <form action="listar.php" method="GET">
         <button title="voltar">

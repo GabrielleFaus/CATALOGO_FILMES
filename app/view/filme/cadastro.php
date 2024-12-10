@@ -49,6 +49,10 @@ if ($Sucesso) {
                 <input type="text" name="nome" placeholder="adicione o nome" required>
             </div><br>
             <div>
+                <label for="imagem">Imagem:</label><br>
+                <input type="text" id="imagem" name="imagem" placeholder="adicione o link da imagem" required>
+            </div><br>
+            <div>
                 <label for="ano">Ano do filme: </label><br>
                 <input type="text" name="ano" placeholder="adicione o ano" required>
             </div><br>
