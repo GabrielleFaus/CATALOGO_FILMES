@@ -16,6 +16,7 @@ class Filme{
     public $nome;
     public $ano;
     public $descricao;
+    public $imagem;
  
     public function __construct(){
         global $pdo;
@@ -53,15 +54,16 @@ class Filme{
         return $stmt->rowCount();
     }
 
-    public function inserir($nome, $ano, $descricao): bool
+    public function inserir($nome, $ano, $descricao, $imagem): bool
     {
-        $query = "INSERT INTO $this->tabela (nome, ano, descricao)
-            VALUES (:nome, :ano, :descricao)";
+        $query = "INSERT INTO $this->tabela (nome, ano, descricao, imagem)
+            VALUES (:nome, :ano, :descricao, :imagem)";
 
         $stmt = $this->pdo->prepare(query: $query);
         $stmt->bindParam("nome", $nome);
         $stmt->bindParam("ano", $ano);
         $stmt->bindParam("descricao", $descricao);
+        $stmt->bindParam("imagem", $imagem);
         $stmt->execute();
 
         return $stmt->rowCount();

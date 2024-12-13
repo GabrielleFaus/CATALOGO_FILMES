@@ -66,7 +66,7 @@ $filmes = $filmeModel->buscartodos();
                 <tr>
                     <td><?php echo $filme->id; ?></td>
                     <td><?php echo $filme->nome; ?></td>
-                    <td><img src="<?php echo $filme->imagem; ?>" alt="<?php echo $filme->nome; ?>" style="width:100px;height:auto;"></td>
+                    <td><img src="<?php echo $filme->imagem; ?>" alt="capa" style="width:100px;height:auto;"></td>
                     <td><?php echo $filme->ano; ?></td>
                     <td><?php echo $filme->descricao; ?></td>
     

@@ -20,5 +20,16 @@
             </ul>
         </nav>
     </header>
+    <div class="card1">
+        <h1>
+            Filmes e muito mais, sem limites
+        </h1>
+    </div>
+    <div class="card2">
+        <h2>
+            Acesso a conteúdos gratuitos. 
+            Assista quando e onde quiser.
+        </h2>
+    </div>
 </body>
 </html>

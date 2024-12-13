@@ -5,9 +5,10 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $nome = $_POST["nome"];
     $ano = $_POST["ano"];
     $descricao = $_POST["descricao"];
+    $imagem = $_POST["imagem"];
 
     $filmeModel = new Filme();
-    $Sucesso = $filmeModel->inserir($nome, $ano, $descricao);
+    $Sucesso = $filmeModel->inserir($nome, $ano, $descricao, $imagem);
 
 if ($Sucesso) {
     return header("Location:listar.php?mensagem=sucesso");
